@@ -518,6 +518,56 @@ header.shadow #search-icon{
     left: 0;
 }
 
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem;
+  
+}
 
+/* Стиль для меток */
+form .form-label {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+/* Стиль для полей ввода */
+form .form-control {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+}
+
+/* Стиль для кнопки подтверждения */
+form .btn-primary {
+    background-color: var(--main-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    color: var(--main-color)
+    cursor: pointer;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s;
+}
+
+form .btn-primary:hover {
+    background-color: #902626;
+}
+
+/* Дополнительные стили для улучшения доступа */
+form .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
 
 
