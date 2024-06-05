@@ -13,17 +13,16 @@ function login($login, $password) {
  return true;
  }
  return false;
-}
-/**
+}/**
 * Перевіряє чи користувач авторизований
 * @return bool
 */
 function isAuthorized() {
-    return isset($_SESSION['authorized']) && $_SESSION['authorized'] === true;
-   }
-   /**
-   * Видаляє сесію користувача
-   */
-   function logout() {
-    unset($_SESSION['authorized']);
-   }
+ return isset($_SESSION['authorized']) && $_SESSION['authorized'] === true;
+}
+/**
+* Видаляє сесію користувача
+*/
+function logout() {
+ unset($_SESSION['authorized']);
+}

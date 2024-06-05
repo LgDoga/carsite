@@ -12,10 +12,13 @@ if (isset($_POST['login']) && isset($_POST['password'])) {
 <head>
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
- <meta name="description" content=""><title>Sign in</title>
+ <meta name="description" content="">
+ <title>Sign in</title>
  <link href="https://getbootstrap.com/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="vh-100">
+
+
 <?php if (isAuthorized()): ?>
  <?php require 'views/admin.php' ?>
 <?php else: ?>
